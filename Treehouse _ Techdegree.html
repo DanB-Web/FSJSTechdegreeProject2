@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://teamtreehouse.com/projects/list-pagination-and-filtering -->
+<html lang="en" class="application-layout degree-projects-show degree-projects-controller show-action logged-in chrome webkit windows loaded" id="layout" data-featurette="application-layout"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/vc705b7s"></script><script type="text/javascript" src="./Treehouse _ Techdegree_files/d98036d1cc"></script><script src="./Treehouse _ Techdegree_files/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js.download" type="text/javascript" async="" id="irfOuterTag"></script><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/analytics.min.js.download"></script><script type="text/javascript" src="./Treehouse _ Techdegree_files/elqCfg.min.js.download"></script><script src="./Treehouse _ Techdegree_files/nr-1153.min.js.download"></script><script src="./Treehouse _ Techdegree_files/foundation-tags-SD1238-e862-4f85-9c39-5e4151faac981.js.download" async="" defer="" type="text/javascript"></script><script async="" src="./Treehouse _ Techdegree_files/scevent.min.js.download"></script><script src="./Treehouse _ Techdegree_files/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js.download" type="text/javascript" async="" id="irfOuterTag"></script><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/bat.js.download"></script><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/hotjar-504173.js.download"></script><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/f.txt"></script><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Treehouse _ Techdegree_files/f.txt"></script><script async="" src="./Treehouse _ Techdegree_files/fbevents.js.download"></script><script async="" src="./Treehouse _ Techdegree_files/gtm.js.download"></script>
+    <title>Treehouse | Techdegree</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d98036d1cc","applicationID":"1824378","transactionName":"cQ5eRRQNCQ8BFhZcUlUTVVQ5EhcMDgFaTEQdElheEQ==","queueTime":1,"applicationTime":446,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={xpid:"VwIBVldWGwIIVlVRAAk=",licenseKey:"d98036d1cc",applicationID:"1824378"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(20),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(21),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(21),a=t(20);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(){var t=window.NREUM;if(!t.loader_config)return null;var n=(t.loader_config.accountID||"").toString()||null,e=(t.loader_config.agentID||"").toString()||null,r=(t.loader_config.trustKey||"").toString()||null;if(!n||!e)return null;var a=i.generateCatId(),s=i.generateCatId(),c=Date.now(),f=o(a,s,c,n,e,r);return{header:f,guid:a,traceId:s,timestamp:c}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}var i=t(18);n.exports={generateTracePayload:r,generateTraceHeader:o}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return w(r)}function i(t,n){var e=f(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(13),u=t(11).generateTracePayload,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(16),w=t(15),v=window.XMLHttpRequest;s.features.xhr=!0,t(10),t(6),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=u();r&&r.header&&(n.setRequestHeader("newrelic",r.header),this.dt=r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=w(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)}),d.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.sameOrigin=f(n).sameOrigin);var r=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=!!NREUM.init.distributed_tracing.enabled),r&&this.sameOrigin){var o=u();if(!o||!o.header)return;var i=o.header;if("string"==typeof t[0]){var a={};for(var s in e)a[s]=e[s];a.headers=new Headers(e.headers||{}),a.headers.set("newrelic",i),this.dt=o,t.length>1?t[1]=a:t.push(a)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",i),this.dt=o)}})}},{}],13:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],14:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(20),s=t(21),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],15:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],16:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],17:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?a("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&a("timing",["fcp",Math.floor(t.startTime)])})}function o(t){if(t instanceof c&&!u){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:s.now()-e,u=!0,a("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var i,a=t("handle"),s=t("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){i=new PerformanceObserver(r);try{i.observe({entryTypes:["paint"]})}catch(f){}}if("addEventListener"in document){var u=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(t){document.addEventListener(t,o,!1)})}}},{}],18:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],19:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],20:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],21:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],22:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(20),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(20),u=t("ee"),d=t(19),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(14),t(17),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(22)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(21),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="google-site-verification" content="4Ga-viQvIZUFNQXu323xpp_24RDlLooxwlpnXhinjPA">
+    <meta name="msvalidate.01" content="F0716E70B7DD3B8C892B48891CA4B541">
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="t5UVCx7nZxgMoUC00J32NQTkWgxLQnC50hREbFUOSvJ6sWEjEUk0GHT74WCEi7j4intNNbXbFJ59njF70NKEqQ==">
+
+
+
+    <script src="./Treehouse _ Techdegree_files/head_vendor-5b9ebdc4a02e1b2e5ee764c861e9bbb31c76ac261c1825fea64a849cc73d8085.js.download" crossorigin="anonymous" integrity="sha256-W569xKAuGy5e52TIYem7sxx2rCYcGCX+pkqEnMc9gIU="></script>
+    <script>
+  window.bugsnagClient = bugsnag({
+    apiKey: "8251a8eb6422d59eaf410e7c1b1c7b38",
+    user: { id: 10756763 },
+    releaseStage: "production",
+    beforeSend: function (report) {
+      if (window.location.hostname != "teamtreehouse.com") {
+        report.ignore();
+      }
+    }
+  });
+</script>
+
+      <script src="./Treehouse _ Techdegree_files/39d1ae64-085b-42e6-a239-a988d6530b80.js.download" type="text/javascript" charset="UTF-8"></script><link type="text/css" href="./Treehouse _ Techdegree_files/optanon.css" rel="stylesheet"><style>#optanon ul#optanon-menu li { background-color: #F9FAFA !important }#optanon ul#optanon-menu li.menu-item-selected { background-color: #EDEFF0 !important }#optanon #optanon-popup-wrapper .optanon-white-button-middle { background-color: #387BAB !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle { background-color: #387BAB !important; border-color: #387BAB !important; }#optanon #optanon-popup-wrapper .optanon-white-button-middle a { color: #ffffff !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle a { color: #ffffff !important }#optanon #optanon-popup-bottom { background-color: #F9FAFA !important }#optanon.modern #optanon-popup-top, #optanon.modern #optanon-popup-body-left-shading { background-color: #F9FAFA !important }.optanon-alert-box-wrapper { background-color:#F9FAFA !important }.optanon-alert-box-wrapper .optanon-alert-box-bg p { color:#4B5658 !important }</style>
+
+<script type="text/javascript">
+function OptanonWrapper() { window.dataLayer.push({ event: "OneTrustGroupsUpdated" }) }
+</script>
+
+    <script>
+//<![CDATA[
+window.appData = '{\"controller_name\":\"degree_projects\",\"action_name\":\"show\",\"app_version\":\"59a00a277900f5db2821cd89a83f3cc9b0a06f63\",\"user\":{\"id\":10756763,\"name\":\"Daniel Bayford\",\"profile_name\":\"danielbayford\",\"cache_marks\":{\"notifications\":1574154160,\"progress\":1574347348,\"bookmarks\":1573816090}}}'
+//]]>
+</script>
+
+
+    <link rel="stylesheet" media="screen" href="./Treehouse _ Techdegree_files/vendor-677ccd700970f5bebfb754b7bef7b82f0e0f9fb0e4842ff3e829891ea426ebd1.css" crossorigin="anonymous" integrity="sha256-Z3zNcAlw9b6/t1S3vve4Lw4Pn7DkhC/z6CmJHqQm69E=">
+<link rel="stylesheet" media="screen" href="./Treehouse _ Techdegree_files/application-1403f52e38aab1a5f322af38e24992ccf571022c9826eab9b8e91204d7fd80bc.css" crossorigin="anonymous" integrity="sha256-FAP1LjiqsaXzIq844kmSzPVxAiyYJuq5uOkSBNf9gLw=">
+    <link rel="stylesheet" type="text/css" href="./Treehouse _ Techdegree_files/fonts.css">
+    
+
+    <style media="print">
+      header, footer, .graph, .nav, svg {
+        display: none
+      }
+    </style>
+
+    
+    
+    
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://static.teamtreehouse.com/assets/apple-touch-icon-120x120-precomposed-dda60d87f49aa928ff86379bb50d9514d4b5f19502ff562b453e3d254730f682.png">
+    
+
+    
+
+    
+
+    <script type="text/javascript">
+  window._elqQ = [];
+  function _elqInitialize() {
+    if(!window._elqInitialized) {
+      window._elqInitialized = true;
+      _elqQ.push(['elqSetSiteId', '1855842777']);
+      var s = document.createElement('script'); s.type = 'text/javascript';
+      s.src = '//img04.en25.com/i/elqCfg.min.js';
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    }
+  };
+</script>
+<script type="text/javascript" class="optanon-category-2">
+  _elqInitialize();
+</script>
+<script type="text/javascript" class="optanon-category-4">
+  _elqInitialize();
+  _elqQ.push(['elqTrackPageView']);
+</script>
+
+  <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style><script src="./Treehouse _ Techdegree_files/f(1).txt"></script><script src="./Treehouse _ Techdegree_files/f(2).txt"></script><script async="" src="./Treehouse _ Techdegree_files/modules.0dd33ed8c1ff42127b92.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><link type="image/x-icon" rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACLElEQVQ4T4WTTWgTQRTH/28Tm0Sq9pAcRPCg0GLspSJSk1oakKLoWXrw85JmFUubDRaEkiJEBLtuaSQbKuJHD+rFq+IlAU2sIhWEqGi9CKJQo8WIbmMyT5JtNc0mOreZ9+Y3v5k3j9BknMyO7GPQGAMsSRhLdF9KNUql+sXBWcUrMSbA2P8nxnij+9WOfwJOzJ32OI2WKIBBAPbaZGYkkn71VGUt+Exx237+KOt79K+VedUglFGOEPFlgNZbTmFeNFy/2q/tiC+EsuEuAtJgCAbLSb92uwqQM+ECiFqtirxAzIcTfu0BolEp1F94QkQ7q3mEvL5bdZuArMJ/N/MhZukVCXbY1xTfxrvj36qWs5EBEnyr5hBD96kuK4DpIEisZdBWUSrfmO6d/GhaKjEQzv4XwEABxFN55pjHbt+Q2HXxk/lOkU4ifgrAtQxpbFASovNKj5aTM8NBhq09/+H9qHvT5nPlL4WYra31ANtwh0AV82ZXwJAgfJbAM4JpgEiUCdJdCNGr92gP5cdKDgxvc8CyH4MzxtK6vU7H9/MEjAB4wcxzIByzGmTC70C0pe7zHE361Rk5Ex4F0YX6EjPwOulTt5lVeHSmA1JpCqD+mnLOM3CTQDKAjasAhHtFQwxdDWjzq3rBbCBpAsD2Jj2WI4hIwqfdX4lbmqkv1Wf3tnQFmWgcII+ZWP2R4y+Lz6fTgXSpFm4BrASPp4bbnA5bqDI3lsrJ64HJxUZWvwGD4vER9DDo/gAAAABJRU5ErkJggg=="></head>
+  <body class="windows chrome webkit "><script src="./Treehouse _ Techdegree_files/mediasource-A187849-72ad-44c6-83bc-3d4f458b85e71.js.download" async="" defer="" type="text/javascript"></script>
+    <!-- Data Layer -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({"loggedIn":true,"userId":10756763,"userEmail":"dan.bayford@gmail.com","accountState":"active","techdegreeStudent":true});
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PZ55S7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZ55S7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+  <header class="header" role="banner" data-header="">
+    <nav class="header-nav container" role="navigation" data-nav="">
+        <button class="hamburger-button hamburger-button-inverse" aria-label="Navigation Menu" data-hamburger-button="">
+    <span class="hamburger"></span>
+  </button>
+
+      <ul class="header-nav-list header-nav-item-profile-points-size-4">
+        <li class="header-nav-item  header-nav-item-primary header-nav-item-logo ">
+          <h6 class="header-nav-item-logo-container">
+            <a class="header-nav-link header-nav-item-logo-link" aria_label="Treehouse Home" data-analytics-link="Treehouse Logo" data-analytics-event="application nav link" data-analytics-path="/home" data-analytics-action="clicked" href="https://teamtreehouse.com/home">
+              <svg class="logo-icon header-nav-item-logo-icon" alt="Treehouse" preserveAspectRatio="xMinYMin meet" viewBox="0 0 30 32"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#logo-icon"></use></svg>
+              <span class="header-nav-item-logo-text header-nav-item-primary">Home</span>
+</a>          </h6>
+</li>
+
+
+        <li class="header-nav-item header-nav-item-tablet header-nav-item-primary header-nav-item-tracks ">
+          <a class="header-nav-link nav-item-tracks" data-analytics-event="application nav link" data-analytics-link="Tracks" data-analytics-path="/tracks" data-analytics-action="clicked" href="https://teamtreehouse.com/tracks">Tracks</a>
+</li>
+        <li class="header-nav-item header-nav-item-tablet header-nav-item-primary header-nav-item-library ">
+          <a class="header-nav-link nav-item-library" data-analytics-event="application nav link" data-analytics-link="Library" data-analytics-path="/library" data-analytics-action="clicked" href="https://teamtreehouse.com/library">Library</a>
+</li>
+        <li class="header-nav-item header-nav-item-tablet nav-item-community header-nav-item-primary header-nav-item-community ">
+          <a class="header-nav-link nav-item-community" data-analytics-event="application nav link" data-analytics-link="Community" data-analytics-path="/community" data-analytics-action="clicked" href="https://teamtreehouse.com/community">Community</a>
+</li>
+        <li class="header-nav-item header-nav-item-tablet header-nav-item-primary header-nav-item-support ">
+          <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Support" data-analytics-path="/support" data-analytics-action="clicked" href="https://teamtreehouse.com/support">Support</a>
+</li>
+
+          <li class="header-nav-item header-nav-item-tablet header-nav-item-secondary header-nav-item-workspaces ">
+            <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Workspaces" data-analytics-path="/workspaces" data-analytics-action="clicked" href="https://teamtreehouse.com/workspaces">Workspaces</a>
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-profile" data-nav-item="profile">
+            <a data-nav-link-profile="" data-dropdown-toggle="profile" data-analytics-link="Profile" data-analytics-action="clicked:internal" data-analytics-event="application nav link" data-analytics-path="/danielbayford" class="header-nav-link " href="https://teamtreehouse.com/danielbayford">
+                <div id="avatar-b43f4b" class="avatar-degree-student header-nav-item-profile-avatar avatar-deep-blue-bg avatar avatar-small">
+    
+    <div class="points-donut chart avatar-points" data-animate-points="true" data-featurette="points-chart" data-width="36" data-height="36" data-donut-width="9px" data-points="{&quot;front-end&quot;:4082,&quot;design&quot;:0,&quot;back-end&quot;:8,&quot;mobile&quot;:0,&quot;fundamentals&quot;:202,&quot;data&quot;:0,&quot;experimental&quot;:0}" data-points-total="4900" id="featurette-1"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="36" height="36" class="ct-chart-donut" style="width: 36; height: 36;"><g class="ct-series add-front-end-stroke"><path d="M13.915,5.133A13.5,13.5,0,1,0,18,4.5" class="ct-slice-donut" ct:value="4082" style="stroke-width: 9px" stroke-dasharray="80.68132019042969px 80.68132019042969px" stroke-dashoffset="0px"></path></g><g class="ct-series add-design-stroke"><path d="M13.915,5.133A13.5,13.5,0,0,0,13.87,5.147" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.04712758958339691px 0.04712758958339691px" stroke-dashoffset="0px"></path></g><g class="ct-series add-back-end-stroke"><path d="M14.066,5.086A13.5,13.5,0,0,0,13.87,5.147" class="ct-slice-donut" ct:value="8" style="stroke-width: 9px" stroke-dasharray="0.20527541637420654px 0.20527541637420654px" stroke-dashoffset="0px"></path></g><g class="ct-series add-mobile-stroke"><path d="M14.066,5.086A13.5,13.5,0,0,0,14.021,5.1" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.04712758958339691px 0.04712758958339691px" stroke-dashoffset="0px"></path></g><g class="ct-series add-fundamentals-stroke"><path d="M18,4.5A13.5,13.5,0,0,0,14.021,5.1" class="ct-slice-donut" ct:value="202" style="stroke-width: 9px" stroke-dasharray="4.039032459259033px 4.039032459259033px" stroke-dashoffset="0px"></path></g><g class="ct-series add-data-stroke"><path d="M18,4.5A13.5,13.5,0,0,0,17.953,4.5" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.047000933438539505px 0.047000933438539505px" stroke-dashoffset="0px"></path></g><g class="ct-series add-experimental-stroke"><path d="M18,4.5A13.5,13.5,0,0,0,17.953,4.5" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.047000933438539505px 0.047000933438539505px" stroke-dashoffset="0px"></path></g></svg></div>
+    <div class="avatar-container">
+      <img alt="Daniel Bayford" class="avatar-image" src="./Treehouse _ Techdegree_files/8d688ec076940cae0948998a8afad22d">
+    </div>
+    <svg class="seal-mask-icon avatar-mask" preserveAspectRatio="xMinYMin meet" viewBox="0 0 36 36"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#seal-mask-icon"></use></svg>
+    
+    
+</div>
+<span id="points-counter" class="header-nav-item-profile-points">4,900</span>
+<span class="header-nav-item-profile-text">View Profile</span>
+
+              <svg class="chevron-icon header-nav-item-profile-chevron" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#chevron-icon"></use></svg>
+</a>            <div class="header-nav-item-profile-dropdown dropdown dropdown-right">
+  <h4 class="dropdown-title">
+    <a href="https://teamtreehouse.com/danielbayford" class="header-nav-item-profile-dropdown-title-link">
+      <strong class="header-nav-item-profile-dropdown-title-name">Daniel Bayford</strong>
+      <span class="header-nav-item-profile-dropdown-title-label">View Profile</span>
+    </a>
+  </h4>
+  <ul>
+    <li><a href="https://teamtreehouse.com/account">Account Settings</a></li>
+      <li><a href="https://teamtreehouse.com/account/enrollment">Subscription</a></li>
+      <li><a href="https://teamtreehouse.com/account/referrals">Referral Discounts</a></li>
+  </ul>
+  <a class="dropdown-secondary" href="https://teamtreehouse.com/logout">Sign Out</a>
+</div>
+
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-notifications loaded" data-featurette="notifications" data-nav-item="notifications" id="featurette-2">
+            <a data-notifications-link="" data-dropdown-toggle="notifications" data-analytics-link="Notifications" data-analytics-action="clicked:internal" data-analytics-event="application nav link" data-analytics-path="/notifications" class="header-nav-link " href="https://teamtreehouse.com/notifications">
+              <svg class="notifications-icon header-nav-item-notifications-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 12"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#notifications-icon"></use></svg>
+              <span class="header-nav-item-notifications-count header-nav-item-notifications-count-hidden loaded" data-featurette="notifications-count" id="featurette-3">0</span>
+              <span class="header-nav-item-notifications-text">Notifications</span>
+</a>            <div class="header-nav-item-notifications-dropdown dropdown dropdown-right notifications notification-dropdown" data-notification-dropdown="">
+  <h4 class="dropdown-title"><a href="https://teamtreehouse.com/notifications">Notifications</a></h4>
+  
+  <ul class="notification-list">
+    <li id="notification-1378086927" class="notification-item  ">
+  <a class="notification-anchor" href="https://treehouse-fsjs-102.slack.com/app_redirect?channel=office-hours">
+  <p class="notification-meta"><strong>Office Hour in Session</strong> • <span class="notification-timestamp">4 days ago</span></p>
+  <div>
+    <h5 class="notification-title"><p>All units. General Q&amp;A, impostor syndrome, problem-solving, the job search, and VS Code tips &amp; tricks</p> with @Lee V</h5>
+  </div>
+</a>
+</li>
+<li id="notification-1378067868" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1378067868?redirect_to=%2Flibrary%2Fsolving-problems-with-ux-design">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">8 days ago</span></p>
+  <h5 class="notification-title">Solving Problems with UX Design</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1377762016" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1377762016?redirect_to=%2Flibrary%2Fconducting-user-interviews">
+  <p class="notification-meta"><strong>New Course</strong> • <span class="notification-timestamp">8 days ago</span></p>
+  <h5 class="notification-title">Conducting User Interviews</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="course-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#course-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1377462569" class="notification-item  ">
+  
+<a class="notification-anchor student-project-review" href="https://teamtreehouse.com/notifications/1377462569?redirect_to=%2Fprojects%2Fa-random-quote-generator">
+  <p class="notification-meta"><strong>Exceeds Expectations</strong> • <span class="notification-timestamp">10 days ago</span></p>
+<h5 class="notification-title">Techdegree Project Update: You passed with flying colors!</h5>
+<p class="notification-message">A Random Quote Generator</p>
+<span class="notification-type">
+  <svg class="check-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 95 78"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#check-icon"></use></svg>
+</span>
+
+</a>
+</li>
+<li id="notification-1377461865" class="notification-item  ">
+  <a class="notification-anchor" href="https://treehouse-fsjs-102.slack.com/app_redirect?channel=office-hours">
+  <p class="notification-meta"><strong>Office Hour in Session</strong> • <span class="notification-timestamp">11 days ago</span></p>
+  <div>
+    <h5 class="notification-title"><p>All units. General Q&amp;A, impostor syndrome, problem-solving, the job search, and VS Code tips &amp; tricks</p> with @Lee V</h5>
+  </div>
+</a>
+</li>
+<li id="notification-1377450770" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1377450770?redirect_to=%2Flibrary%2Fpractice-storyboarding">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">11 days ago</span></p>
+  <h5 class="notification-title">Practice Storyboarding</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1377246093" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1377246093?redirect_to=%2Flibrary%2Fcreating-an-affinity-diagram">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">11 days ago</span></p>
+  <h5 class="notification-title">Creating an Affinity Diagram</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1377169416" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1377169416?redirect_to=%2Flibrary%2Fcreating-user-personas">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">11 days ago</span></p>
+  <h5 class="notification-title">Creating User Personas</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1376538931" class="notification-item  ">
+  <a class="notification-anchor" href="https://treehouse-fsjs-102.slack.com/app_redirect?channel=office-hours">
+  <p class="notification-meta"><strong>Office Hour in Session</strong> • <span class="notification-timestamp">14 days ago</span></p>
+  <div>
+    <h5 class="notification-title"><p>Units: 1, 2, and 3. General Q&amp;A, Git and GitHub, getting started with algorithms/data structures, soft skills and time management</p> with @Juan L</h5>
+  </div>
+</a>
+</li>
+<li id="notification-1376534689" class="notification-item  ">
+  <a class="notification-anchor" href="https://treehouse-fsjs-102.slack.com/app_redirect?channel=office-hours">
+  <p class="notification-meta"><strong>Office Hour in Session</strong> • <span class="notification-timestamp">18 days ago</span></p>
+  <div>
+    <h5 class="notification-title"><p>All units. General Q&amp;A, impostor syndrome, problem-solving, the job search, and VS Code tips &amp; tricks</p> with @Lee V</h5>
+  </div>
+</a>
+</li>
+<li id="notification-1376528885" class="notification-item  ">
+  <a class="notification-anchor" href="https://treehouse-fsjs-102.slack.com/app_redirect?channel=office-hours">
+  <p class="notification-meta"><strong>Office Hour in Session</strong> • <span class="notification-timestamp">21 days ago</span></p>
+  <div>
+    <h5 class="notification-title"><p>Units: 1, 2, and 3. General Q&amp;A, Git and GitHub, getting started with algorithms/data structures, soft skills and time management</p> with @Juan L</h5>
+  </div>
+</a>
+</li>
+<li id="notification-1376481384" class="notification-item  ">
+  
+<a class="notification-anchor topic-front-end" href="https://teamtreehouse.com/notifications/1376481384?redirect_to=%2Flibrary%2Fpractice-using-data-with-pug-templates">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">about 1 month ago</span></p>
+  <h5 class="notification-title">Practice Using Data with Pug Templates</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1376130468" class="notification-item  ">
+  
+<a class="notification-anchor topic-front-end" href="https://teamtreehouse.com/notifications/1376130468?redirect_to=%2Flibrary%2Fusing-sequelize-orm-with-express">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">about 2 months ago</span></p>
+  <h5 class="notification-title">Using Sequelize ORM With Express </h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1375822258" class="notification-item  ">
+  
+<a class="notification-anchor topic-front-end" href="https://teamtreehouse.com/notifications/1375822258?redirect_to=%2Flibrary%2Fpractice-importing-and-exporting-modules-in-nodejs">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">about 2 months ago</span></p>
+  <h5 class="notification-title">Practice Importing and Exporting Modules in Node.js</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1375493368" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1375493368?redirect_to=%2Flibrary%2Fcollecting-design-inspiration">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">2 months ago</span></p>
+  <h5 class="notification-title">Collecting Design Inspiration</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1375188920" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1375188920?redirect_to=%2Flibrary%2Freceiving-ux-feedback-by-example">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">2 months ago</span></p>
+  <h5 class="notification-title">Receiving UX Feedback by Example</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1374884751" class="notification-item  ">
+  
+<a class="notification-anchor topic-front-end" href="https://teamtreehouse.com/notifications/1374884751?redirect_to=%2Flibrary%2Fdebug-node-applications-with-visual-studio-code">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">2 months ago</span></p>
+  <h5 class="notification-title">Debug Node Applications with Visual Studio Code</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1374577088" class="notification-item  ">
+  
+<a class="notification-anchor topic-front-end" href="https://teamtreehouse.com/notifications/1374577088?redirect_to=%2Flibrary%2Fprocess-sass-with-scoutapp">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">2 months ago</span></p>
+  <h5 class="notification-title">Process Sass with Scout-App</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1374273058" class="notification-item  ">
+  
+<a class="notification-anchor topic-design" href="https://teamtreehouse.com/notifications/1374273058?redirect_to=%2Flibrary%2Fhandling-feedback-as-a-ux-designer">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">2 months ago</span></p>
+  <h5 class="notification-title">Handling Feedback as a UX Designer</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+<li id="notification-1373931702" class="notification-item  ">
+  
+<a class="notification-anchor topic-front-end" href="https://teamtreehouse.com/notifications/1373931702?redirect_to=%2Flibrary%2Ftranslating-pseudocode-to-javascript-code">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">3 months ago</span></p>
+  <h5 class="notification-title">Translating Pseudocode to JavaScript Code</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#workshop-icon"></use></svg>
+  </span>
+</a>
+</li>
+
+  </ul>
+  <a class="header-nav-item-notifications-dropdown-all dropdown-secondary" href="https://teamtreehouse.com/notifications">View All Notifications</a>
+</div>
+
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-settings ">
+            <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Settings" data-analytics-path="/account" data-analytics-action="clicked" href="https://teamtreehouse.com/account">Settings</a>
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-sign-out ">
+            <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Sign Out" data-analytics-path="/logout" data-analytics-action="clicked" href="https://teamtreehouse.com/logout">Sign Out</a>
+</li>      </ul>
+      
+    </nav>
+  </header>
+
+  <main class="content " role="main" data-content="">
+      <div class="container ">
+        
+        
+        
+
+
+
+
+        
+          
+
+<div class="degree project box" data-featurette="degree-project-content" data-status-channel="" data-event-pusher-url="https://event-pusher.teamtreehouse.com" id="featurette-4">
+  <div class="degree-progress">
+    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 4 18 16" class="project-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#project-icon"></use></svg>
+    <span class="estimate">
+        12.0 hours
+    </span>
+  </div>
+
+  <div class="degree-hero">
+      <div class="degree-status">
+        <span class="degree-status-label">Project Status</span>
+        <span class="degree-status-status">Ready for Submission</span>
+      </div>
+      <h2 class="h4 degree-project-number">Project 2</h2>
+    <h1>List Pagination and Filtering</h1>
+
+      
+      <p>Are you ready to have your project reviewed? Before you submit your project, make sure you have double-checked your work. We want you to pass the first time!</p>
+
+      <p>If you get your project back and it needs work, you’ll have to wait 1 day before you can resubmit your project.</p>
+
+    <div class="actions">
+      <a class="button inverse icon-on-right primary async-modal-trigger" href="https://teamtreehouse.com/projects/list-pagination-and-filtering/submit" data-featurette="async-modal-trigger" data-src="/projects/list-pagination-and-filtering/submit" data-target="async_modal" id="featurette-5">Submit for Review</a>
+    </div>
+
+    
+
+  </div>
+
+    <div data-featurette="tabbed-content" id="featurette-6" class="loaded">
+      <div class="tabs left">
+        
+        <ul>
+        <li id="tab-instructions" class="current">
+          <a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#instructions">Instructions</a>
+        </li>
+      
+        <li id="tab-how-you-ll-be-graded">
+          <a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#how-you-ll-be-graded">How you'll be graded</a>
+        </li>
+      </ul>
+      </div>
+      <div class="tabbed-content">
+        
+  <div data-tab-content="">
+
+    <div class="markdown-zone"><p>In this project, you'll use a common web development technique known as "pagination" to enhance the usability of a web page.  </p>
+
+<p>You'll start with a page that contains a list of 54 student names, photos and email addresses. You'll write JavaScript to display 10 names at a time, and add a navigation system -- a series of links at the bottom of the page -- to let users click through the other student entries, 10 at a time.</p>
+
+<p>While making these improvements, you'll use the principle of "progressive enhancement." The page should still display the students' names without JavaScript turned on, but will be much improved (enhanced) with the JavaScript programming you add. In other words, you'll add JavaScript to paginate and improve the project, without altering the project in such a way that JavaScript is required to use the web page.</p>
+
+<p>Your pagination solution will need to work with a list of any number of students, not just with the supplied list of 54 students. This means your solution needs to be flexible enough to respond to lists of different lengths. </p>
+
+<p>After completing this project, you'll have some powerful JavaScript skills and a strong second portfolio piece to show off to potential employers.</p></div>
+    <div class="grid-container syllabi-controller">
+      <div class="grid-66 tablet-grid-66">
+        <div id="syllabus-stages">
+
+
+          <div class="project-stage">
+            <div class="radial-icon toggle-steps">
+              <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 12" class="right-arrow-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#right-arrow-icon"></use></svg>
+            </div>
+            <h2 class="h4">Before you start</h2>
+            <p>To prepare for this project you'll need to make sure you complete and understand these steps.</p>
+            <div data-featurette="expandable-content-card" id="featurette-7">
+  <a class="steps-trigger toggle-steps selected" href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">
+    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5" class="chevron-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#chevron-icon"></use></svg>
+    4
+    steps
+</a>  <ul class="steps-list ">
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="review-the-policy-on-reusing-code-in-a-techdegree-project">Review the policy on <a href="https://teamtreehouse.com/library/reusing-code-in-a-techdegree-project">Reusing Code in a Techdegree project</a>.</h4>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="github">GitHub</h4>
+
+<ul>
+<li>Create a new repo for this project on <a href="https://github.com/">GitHub</a>.</li>
+<li>Create a <code>README.md</code> file for your repo. Add details about your project to the <code>README</code>, for example:
+
+<ul>
+<li>A description of the project in your own words</li>
+<li>The skills, techniques and process used to complete the project</li>
+<li>If you’ve attempted to earn an “Exceeds Expectations” grade, list the “Extra Credit” features you added.</li>
+</ul>
+</li>
+<li>If you need a reminder on how to use GitHub and GitHub desktop, please refer back to the workshop, <a href="https://teamtreehouse.com/library/share-your-techdegree-projects-with-github-desktop">Share Your Projects with GitHub Desktop</a>.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="download-the-project-files">Download the project files</h4>
+
+<ul>
+<li>You are provided with several starter files:
+
+<ul>
+<li>An <code>index.html</code> file contains the initial HTML markup.  ** Do not make any changes to this file.**</li>
+<li>Two CSS files, <code>design.css</code> and <code>reset.css</code> inside the <code>css</code> folder. These files contain specific styling required to make the pagination features and list look good.</li>
+<li>A <code>script.js</code> file in the <code>js</code> folder. You'll add code to this file. We've provided code comments to get you started.</li>
+<li>Example HTML files in the <code>examples</code> folder:
+
+<ul>
+<li>The <code>example-exceeds.html</code> and <code>example-meets.html</code> files demonstrate what a meets and exceeds project will look like in the browser.</li>
+<li>The <code>44students.html</code> and <code>64 students.html</code> files allow you to test your solution against lists of varying length.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="follow-the-instructions-below">Follow the Instructions Below</h4>
+
+<ul>
+<li>It can be a lot easier to write a program, if you divide it into smaller, more manageable parts that you program one at a time. The instructions below divide the project into individual sections, which are further broken up into even smaller steps.  Follow along, one step at a time.</li>
+</ul>
+
+<hr>
+        </div>
+      </li>
+  </ul>
+</div>
+
+          </div>
+          <div class="project-stage">
+            <div class="radial-icon toggle-steps">
+              <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 12" class="right-arrow-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#right-arrow-icon"></use></svg>
+            </div>
+            <h2 class="h4">Project Instructions</h2>
+            <p>To complete this project, follow the instructions below. If you get stuck, ask a question on Slack or in the Treehouse Community.</p>
+            <div data-featurette="expandable-content-card" data-project-instructions="true" data-project-slug="list-pagination-and-filtering" data-student-project-id="247183" id="featurette-8">
+  <a class="steps-trigger toggle-steps  selected" href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">
+    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5" class="chevron-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#chevron-icon"></use></svg>
+    11
+    steps
+</a>  <ul class="steps-list hidden" style="display: block;">
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="seeking-assistance">Seeking assistance</h4>
+
+<ul>
+<li>If you're having trouble with a bug or moving forward with the project:
+
+<ul>
+<li>Reach out to your Slack team.<br>
+<strong>Pro Tip:</strong> A good “Help!” Slack post begins with a friendly greeting, details any important info like the problem you’re having, what you’ve tried so far to fix it, and a link to your repo.<br>
+</li>
+<li>Take a look at this great study guide: <a href="https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing">List Pagination and Filter Study Guide</a>
+</li>
+<li>Review the unit material.</li>
+<li>Practice your Google skills by rephrasing your question in Google until you find helpful results.</li>
+</ul>
+</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="no-snippets-plugins-or-libraries-including-jquery">No snippets, plugins or libraries, including jQuery</h4>
+
+<ul>
+<li>For this project, avoid using the popular jQuery library.  All code for this project must be your own, and must be plain JavaScript, often referred to as "vanilla" JavaScript.</li>
+<li>Avoid using any other libraries, plugins or code snippets for any aspect of this project, including the pagination.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="create-your-global-variables">Create your global variables</h4>
+
+<ul>
+<li>This project can be completed with just two global variables
+
+<ul>
+<li>Create a variable to store the student <code>list item</code> elements in the student list.<br>
+
+<ul>
+<li>
+<strong>Pro Tip:</strong> Log out the variable storing the list to ensure it equals the list of <code>li</code> items and not the container of the <code>li</code> elements.</li>
+</ul>
+</li>
+<li>Create a variable to store the number of items to show on each “page”, which for this project, is 10.</li>
+</ul>
+</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="display-a-page">Display a “page”</h4>
+
+<ul>
+<li>Create a function to hide all the students except for the ten you want displayed on a given page. </li>
+<li>This function should have two parameters:
+
+<ul>
+<li>The <code>list</code> parameter to represent the actual list of students that you’ll pass in as an argument later when you call this function.</li>
+<li>The <code>page</code> parameter to represent the page number that you’ll pass in as an argument later when you call this function.</li>
+</ul>
+</li>
+<li>Inside the function:
+
+<ul>
+<li>Create two variables to store the start index and the end index of the list items to be displayed on the given page.  To make this function dynamic and work with a list of any length, a bit of basic math can be used to determine these values.
+
+<ul>
+<li>Start Index = (<code>page</code> parameter * items per page) - items per page</li>
+<li>End Index = <code>page</code> parameter * items per page</li>
+</ul>
+</li>
+<li>Loop over the <code>list</code> parameter.
+
+<ul>
+<li>Inside the loop, display any list item with an index that is greater than or equal to the <code>start index</code> variable <strong>and</strong> less than the <code>end index</code> variable.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <strong>Pro Tip:</strong> If you call this function in the early stages of building the function, you’ll be able to use log statements and the Chrome dev tools console to test and check that variables, values and indexes are what you think they are.</li>
+<li>
+<strong>Project Warm Ups:</strong> Creating and using functions, and selecting and manipulating sections of a list can feel confusing at first.  For some helpful practice, check out the project Warm Ups <a href="https://teamtreehouse.com/library/fsjs-project-warm-up-list-section-selection">List Section Selection</a> and <a href="https://teamtreehouse.com/library/fsjs-project-warm-up-whats-the-deal-with-functions">What's the Deal with Functions</a>.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="add-pagination-links">Add pagination links</h4>
+
+<ul>
+<li>Create a function that creates and appends functioning pagination links.</li>
+<li>This function should accept a single <code>list</code> parameter to represent the actual list of students that you’ll pass in as an argument later when you call this function.</li>
+<li>Inside the function:
+
+<ul>
+<li>Create and append the DOM elements for the pagination links.
+
+<ul>
+<li>Use lines 119-137 in the <code>examples/example-meets.html</code> file as your template.</li>
+<li>Pay close attention to how elements are nested, any necessary class names or other element attributes, and where your additions should be appended.</li>
+</ul>
+</li>
+<li>You should end up with:
+
+<ul>
+<li>A container <code>DIV</code> element with a class name of “pagination”, and appended to the <code>div</code> element with the class name of <code>page</code>.</li>
+<li>A nested  <code>UL</code> element containing one <code>LI</code> element for every ten students in the list.</li>
+<li>
+<strong>Pro Tip:</strong> You can divide <code>list.length</code> by the max number of items per page to figure out how many pages are needed, and you can use a loop that iterates that many times to create the correct number of <code>LI</code> elements.</li>
+<li>Each <code>LI</code> element should contain an <code>A</code> element with an <code>href</code> attribute of <code>#</code>, and text set to the page number each link will show.  First link is <code>1</code>.  Second link is <code>2</code>.  And so on.</li>
+<li>
+<strong>Pro Tip:</strong> The loop index can be helpful in setting the text of the pagination links.</li>
+</ul>
+</li>
+<li>Add the <code>active</code> class name to the first pagination link initially.<br>
+</li>
+<li>Add a “click” event listener to each <code>A</code> element.  A loop can be helpful here.</li>
+<li>When a pagination link is clicked:
+
+<ul>
+<li>The <code>active</code> class name should be removed from all pagination links.  A loop can be helpful for this step.</li>
+<li>The <code>active</code> class name should be added to the link that was just clicked.  The target property of the event object should be useful here.</li>
+<li>The function to show a page should be called, passing in as arguments, the global variable for the list items, and the page number that should be shown.  The text content of the <code>A</code> element that was just clicked can be helpful here.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Note:</strong> Your program needs to work for any number of list items, so your solution needs to be dynamic. You can test that your solution works for any size list by opening the <code>examples/44students.html</code> and <code>examples/64 students.html</code> files, and linking your JS file.</li>
+<li>
+<strong>Project Warm Ups:</strong> DOM manipulation and updating an indication that a button is active can be tricky at first.  For some helpful practice, check out the project Warm Up <a href="https://teamtreehouse.com/library/fsjs-project-warm-up-fun-dom-manipulation">Fun DOM Manipulation</a> and <a href="https://teamtreehouse.com/library/fsjs-project-warm-up-wheres-the-action">Where's the Action</a>.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="call-your-functions">Call your functions</h4>
+
+<ul>
+<li>Call the show page function, passing in as arguments, the global variable for the list items, and the number 1 for the first page, which should be shown initially.</li>
+<li>Call the append page links function, passing in as an argument, the global variable for the list items.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="add-code-comments">Add code comments</h4>
+
+<ul>
+<li>Replace the code comments in the file with your own code comments.</li>
+<li>The key to creating good code comments is to keep them brief, but clear, so that your fellow developers can get an idea of what's going on in your code at a glance, without having to review every line of your code.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="review-the-how-youll-be-graded-section">Review the "How you'll be graded" section</h4>
+
+<ul>
+<li>Check out the "How you'll be graded" section, located above, next to the instructions tab, just below the project title. This section lists specifically what will be considered and checked when your project is being reviewed, and your project grade is being determined.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="cross-browser-consistency">Cross-Browser consistency:</h4>
+
+<ul>
+<li>Google Chrome has become the default development browser for most developers. With such a selection of browsers for users to choose from, it's a good idea to get in the habit of testing your projects in all modern browsers.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="quality-assurance-and-the-student-project-submission-checklist">Quality Assurance and the Student Project Submission Checklist</h4>
+
+<ul>
+<li>Take the time for thorough quality assurance testing.  Before you submit your project for review, please check off all of the items on the <a href="http://treehouse-techdegree.s3.amazonaws.com/Student-Project-Submission-Checklist.pdf">Student Project Submission Checklist</a>.</li>
+<li>Share your project in Slack in the <code>#review-my-project</code> channel to get a preliminary review and catch anything you might have missed.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <p><strong>NOTE: What you submit is what will get reviewed</strong></p>
+
+<ul>
+<li>When you submit your project, a snapshot is taken of your repository, and that is what the reviewer will see.  Consequently, the reviewer won't see any changes you make to your repo <strong>after</strong> you submit the project.<br>
+</li>
+</ul>
+
+<hr>
+        </div>
+      </li>
+  </ul>
+</div>
+
+          </div>
+          <div class="project-stage">
+            <div class="radial-icon toggle-steps">
+              <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 16 16" class="star-small-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#star-small-icon"></use></svg>
+            </div>
+            <h2 class="h4">Extra Credit</h2>
+            <p>To get an "exceeds" rating, complete all of the steps below:</p>
+            <div data-featurette="expandable-content-card" id="featurette-9">
+  <a class="steps-trigger toggle-steps  selected" href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">
+    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5" class="chevron-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#chevron-icon"></use></svg>
+    4
+    steps
+</a>  <ul class="steps-list hidden" style="display: block;">
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="add-search-component">Add search component</h4>
+
+<ul>
+<li>Dynamically create and append a search bar.  Avoid making any changes in the <code>index.html</code> file.  You can reference the <code>examples/example-exceeds.html</code> file, lines 16-19, to see an example of the markup you'll create.</li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="add-functionality-to-the-search-component">Add functionality to the search component</h4>
+
+<ul>
+<li><p>When the "Search" button is clicked, the list is filtered by student name for those that include the search value. For example, if the name <code>Phillip</code> is typed into the box, list all items with a name that includes Phillip.  If the letter <code>S</code> is typed in, all items with an <code>S</code> in the name will show.</p></li>
+<li><p><strong>Pro Tip:</strong> To improve the functionality and add to the user experience, consider adding a keyup event listener to the search input so that the list filters in real time as the user types.  This would be in addition to making the search button clickable since pasting text into the search bar might not trigger the keyup event.</p></li>
+<li><p><strong>Project Warm Up:</strong> Configuring a search feature can seem complex at first, but it's really just a few fundamental steps.   For some helpful practice, check out the project Warm Up <a href="https://teamtreehouse.com/library/fsjs-project-warm-up-simple-search">Simple Search</a>.</p></li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="paginate-search-results">Paginate search results</h4>
+
+<ul>
+<li><p>Display pagination links based on how many search results are returned.  For example: if 10 or fewer results are returned, 0 or 1 pagination links are displayed. If 22 search results are returned, 3 pagination links are displayed.</p></li>
+<li><p><strong>Pro Tip:</strong> To paginate the search results, try storing the search results in an array that can act as a list, on which you can call your functions to show a page and append pagination links. </p></li>
+</ul>
+        </div>
+      </li>
+      <li class="steps-list-item">
+        <div class="markdown-zone">
+          <h4 id="handle-no-results-returned">Handle no results returned</h4>
+
+<ul>
+<li><p>If no matches are found by the search, include a message in the HTML to tell the user there are no matches.</p></li>
+<li><p><strong>Note</strong> Don't use the built in alert() method here.  The "No results" message must be printed to the page. </p></li>
+</ul>
+
+<hr>
+        </div>
+      </li>
+      <li class="steps-list-item">
+  <div class="markdown-zone">
+    <p>
+      <strong>NOTE: Getting an "Exceed Expectations" grade.</strong>
+    </p>
+    <ul>
+      <li>
+        See the rubric in the "<strong>How You'll Be Graded</strong>" tab above for details on what you need to receive an "Exceed Expectations" grade.
+      </li>
+      <li>
+        Passing grades are final. If you try for the "Exceeds Expectations" grade, but miss an item and receive a “Meets Expectations” grade, you won’t get a second chance. Exceptions can be made for items that have been misgraded in review.
+      </li>
+      <li>
+        Always mention in the comments of your submission or any resubmission, what grade you are going for. Some students want their project to be rejected if they do not meet all Exceeds Expectations Requirements, others will try for all the "exceeds" requirement but do not mind if they pass with a Meets Expectations grade. Leaving a comment in your submission will help the reviewer understand which grade you are specifically going for</li>
+    </ul>
+  </div>
+</li>
+
+  </ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="grid-33 tablet-grid-33">
+          <div class="module box-shaded project-downloads">
+            <div class="project-downloads-info">
+              <div class="left">
+                <h3 class="h6">Download files</h3>
+                <p>Zip file</p>
+              </div>
+              <div class="right">
+                <a href="https://treehouse-techdegree-projects.s3.amazonaws.com/FSJS/list_pagination_and_filtering-v1.zip?Signature=nwf2ULJZqNX13kWHAlMBAhSV%2Brc%3D&amp;Expires=1574525776&amp;AWSAccessKeyId=AKIAZFCLK65RQYWEUFF4" class="button secondary"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 12" class="down-arrow-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#down-arrow-icon"></use></svg></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="module project-related">
+    <h3 class="h6">Project Resources</h3>
+    <div class="box-shaded">
+        <a class="project-related-item" href="https://www.shopify.com/partners/blog/what-is-progressive-enhancement-and-why-should-you-care">
+          <span class="type">External Link</span>
+          <h4 class="h6">What is Progressive Enhancement and Why Should You Care?</h4>
+</a>        <a class="project-related-item" href="https://en.wikipedia.org/wiki/Progressive_enhancement#Core_principles">
+          <span class="type">External Link</span>
+          <h4 class="h6">Core Principles of Progressive Enhancement</h4>
+</a>        <a class="project-related-item" href="https://teamtreehouse.com/library/understanding-unobtrusive-javascript">
+          <span class="type">Video</span>
+          <h4 class="h6">What is Unobtrusive JavaScript?</h4>
+</a>        <a class="project-related-item" href="http://blog.teamtreehouse.com/unobtrusive-javascript-important">
+          <span class="type">External Link</span>
+          <h4 class="h6">Unobtrusive JavaScript</h4>
+</a>        <a class="project-related-item" href="https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing">
+          <span class="type">External Link</span>
+          <h4 class="h6">Pagination Project Guide</h4>
+</a>    </div>
+  </div>
+
+
+        <div class="module project-help">
+          <h3 class="h6">Need Help?</h3>
+          <p>Have questions about this project? Start a discussion with the community and Treehouse staff.</p>
+            <a class="button large default-on-mobile" target="_blank" href="https://treehouse-fsjs-102.slack.com/messages/unit-02">Get Help</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-requirements" data-tab-content="" style="display: none;">
+  <p class="large">
+    To get a passing grade you'll need to submit a project that meets the following requirements. If your project receives a "Needs Work" rating on any of these tasks, then you'll need to edit your project and re-submit it until it "Meets" or "Exceeds" each task requirement.
+  </p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th class="grade-below"><h3 class="h6"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 22 22" class="caution-circle-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#caution-circle-icon"></use></svg> Needs Work</h3></th>
+        <th class="grade-meets"><h3 class="h6"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 22 22" class="checkmark-fill-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#checkmark-fill-icon"></use></svg> Meets Expectations</h3></th>
+        <th class="grade-exceeds"><h3 class="h6"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 22 22" class="checkmark-fill-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#checkmark-fill-icon"></use></svg> Exceeds Expectations</h3></th>
+      </tr>
+    </thead>
+    <tbody class="markdown-zone">
+        <tr>
+          <td>No snippets, plugins or libraries</td>
+          <td><ul>
+<li>Project uses jQuery, some other library, or one or more code snippets or plugins.</li>
+</ul></td>
+          <td><ul>
+<li>Project contains only plain "vanilla" JavaScript and doesn't rely on jQuery, some other library, or any code snippets or plugins.</li>
+</ul></td>
+          <td><ul>
+<li>N/A</li>
+</ul></td>
+        </tr>
+        <tr>
+          <td>Progressive enhancement &amp; unobtrusive JavaScript</td>
+          <td><ul>
+<li><p>Uses inline JavaScript instead of keeping all JS in an external JS file.</p></li>
+<li><p>Any component of the HTML markup for pagination links is directly in the HTML instead of being created dynamically.</p></li>
+</ul></td>
+          <td><ul>
+<li><p>No inline JavaScript. All JS is linked from an external file. </p></li>
+<li><p>Uses unobtrusive JavaScript to append markup for the pagination links. So none of the pagination link's markup is added into the HTML.</p></li>
+</ul></td>
+          <td><ul>
+<li>Use unobtrusive JavaScript to append HTML for a search bar.</li>
+</ul></td>
+        </tr>
+        <tr>
+          <td>Pagination Links</td>
+          <td><ul>
+<li>No links appear for pagination, pagination is hard coded, or the incorrect number of links are displayed.</li>
+</ul></td>
+          <td><ul>
+<li>Pagination links are created. If there are 44 students, 5 links should be generated, if there’s 66 students, 7 links should be generated.  Etc.</li>
+</ul></td>
+          <td><ul>
+<li>Pagination links display based on how many search results are returned. For example: if 10 or fewer results are returned, 0 or 1 pagination links are displayed. If 22 search results are returned, 3 pagination links are displayed. </li>
+</ul></td>
+        </tr>
+        <tr>
+          <td>Paging</td>
+          <td><ul>
+<li><p>The first 10 students aren’t shown when the page loads. </p></li>
+<li><p>Nothing happens when the links are clicked, or the incorrect number of students are displayed.</p></li>
+</ul></td>
+          <td><ul>
+<li><p>The first 10 students are shown when the page loads, and each pagination link displays the correct students.</p></li>
+<li><p>Clicking on “1” in the pagination links should show students 1 to 10. Clicking “2” shows 11 to 20. Clicking “5” shows students 41 to 50, and so on.</p></li>
+</ul></td>
+          <td><ul>
+<li>When a search yields 0 results, a message is displayed on the page, informing the user that no results have been found.</li>
+</ul></td>
+        </tr>
+        <tr>
+          <td>Code Comments</td>
+          <td><ul>
+<li>No comments describing how the code and functions work.</li>
+</ul></td>
+          <td><ul>
+<li>Code comments have been added explaining how the functions work.</li>
+</ul></td>
+          <td><ul>
+<li>N/A</li>
+</ul></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+      </div>
+    </div>
+</div>
+
+<script src="./Treehouse _ Techdegree_files/socket_io-3960309545cb674b2ef2c732ff7e03d3821c2c34efed3b4c72a1cb90e8da9ff4.js.download" crossorigin="anonymous" integrity="sha256-OWAwlUXLZ0su8scy/34D04IcLDTv7TtMcqHLkOjan/Q="></script>
+
+
+</div></main>
+  <footer class="footer" role="contentinfo">
+  <div class="container ">
+      <div class="footer-bonus">
+          <div class="footer-bonus-item" data-featurette="analytics-click-event" data-target="a" data-event-action="Clicked Student Referral Discount Link" data-event-category="link" data-event-label="Source: Footer" id="featurette-10">
+            <h5 class="footer-bonus-heading">Student Referral Discount</h5>
+            <a title="See the student perks." class="footer-bonus-link" href="https://teamtreehouse.com/account/referrals"><svg class="referrals-icon footer-bonus-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 70 50"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#referrals-icon"></use></svg></a>
+            <p class="footer-bonus-description"><a href="https://teamtreehouse.com/account/referrals">Invite friends</a> to Treehouse and get a discount off your monthly enrollment.</p>
+</div>        <div class="footer-bonus-item" data-featurette="analytics-click-event" data-target="a" data-event-action="Clicked Student Perks Link" data-event-category="link" data-event-label="Source: Footer" id="featurette-11">
+          <h5 class="footer-bonus-heading">Student Perks</h5>
+          <a title="See the student perks." class="footer-bonus-link" href="https://teamtreehouse.com/perks"><svg class="cash-icon footer-bonus-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 70 50"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#cash-icon"></use></svg></a>
+          <p class="footer-bonus-description">A collection of <a href="https://teamtreehouse.com/perks">special discounts</a> and exclusive offers available for Treehouse students.</p>
+</div>      </div>
+    <ul class="footer-list">
+        <li class="footer-item footer-social-item">
+          <a title="Twitter" class="footer-social-link" target="_blank" href="http://twitter.com/treehouse"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="twitter-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#twitter-icon"></use></svg></a>
+        </li>
+        <li class="footer-item footer-social-item">
+          <a title="Youtube" class="footer-social-link" target="_blank" href="http://youtube.com/user/gotreehouse"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="youtube-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#youtube-icon"></use></svg></a>
+        </li>
+        <li class="footer-item footer-social-item">
+          <a title="Facebook" class="footer-social-link" target="_blank" href="http://facebook.com/teamtreehouse"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="facebook-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#facebook-icon"></use></svg></a>
+        </li>
+        <li class="footer-item footer-social-item">
+          <a title="LinkedIn" class="footer-social-link" target="_blank" href="http://linkedin.com/company/treehouse-island-inc-"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="linked-in-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#linked-in-icon"></use></svg></a>
+        </li>
+        <li class="footer-item footer-social-item">
+          <a title="Instagram" class="footer-social-link" target="_blank" href="http://instagram.com/teamtreehouse"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="instagram-icon"><use xlink:href="/assets/icons-9bdb8530f3f097b4a47774ce4686c3b94b482eb486b20b5cbf252e7b0cb5860b.svg#instagram-icon"></use></svg></a>
+        </li>
+      <li class="footer-item footer-item-text footer-item-blog"><a class="footer-item-text-link" href="https://blog.teamtreehouse.com/">Treehouse Blog</a></li>
+      <li class="footer-item footer-item-text"><a class="footer-item-text-link" href="https://teamtreehouse.com/about">About Treehouse</a></li>
+      <li class="footer-item footer-item-text"><a rel="nofollow" class="footer-item-text-link" href="https://teamtreehouse.com/privacy">Privacy Policy</a></li>
+      <li class="footer-item footer-item-text"><a rel="nofollow" class="footer-item-text-link" href="https://teamtreehouse.com/terms">Terms &amp; Conditions</a></li>
+      <li class="footer-item footer-item-copyright">© 2019 Treehouse Island, Inc.</li>
+    </ul>
+</div></footer>
+
+
+  
+ <!-- yields content from within treehouse-tour paths. Find helper in application.helper -->
+
+<div id="async_modal" class="modal" data-featurette="modal" style="; display: none;">
+</div>
+
+
+<div id="mini-profile-container"></div>
+<div id="tarp" class="modal-tarp" style="display: none;" data-featurette="tarp"></div>
+
+
+
+    
+    <script src="./Treehouse _ Techdegree_files/application_vendor-7d772979fef0f7835ecd6e8063a0a44118ae409d72485c621bf73a7ee961a626.js.download" crossorigin="anonymous" integrity="sha256-fXcpef7w94NezW6AY6CkQRiuQJ1ySFxiG/c6fulhpiY="></script>
+    
+    <script src="./Treehouse _ Techdegree_files/application-61652622d2800703788362a2e7dccec45f1ace5f8769ffc3080a730ffa38d7eb.js.download" crossorigin="anonymous" integrity="sha256-YWUmItKABwN4g2Ki59zOxF8azl+Haf/DCApzD/o41+s="></script>
+    
+    
+    <!-- Segment.io Analytics -->
+<script type="text/javascript" class="optanon-category-2">
+  !function(){
+    var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("DMUKccVYvuuUIVSJlokCJe0YQyGm9qVb");
+
+    analytics.ready(function(){
+      window.analytics.segmentDebug = window.analytics.debug;
+      window.analytics.debug = function(state) {
+        if (state == null) { state = true; }
+        $.cookie("_treehouse_analytics_debug", state);
+        return state;
+      };
+    })
+
+    window.recordedAnalytics = []
+    function recordAnalyticsCall(callType, event, properties, options) {
+      if ($.cookie("_treehouse_analytics_debug") == "true") {
+        window.recordedAnalytics.push([callType, event, properties, options])
+        console.debug("Analytics: ", callType, ("'" + event + "'"), properties, options);
+      }
+    }
+    analytics.on('alias', function(e, p, o) { recordAnalyticsCall('alias', e, p, o)});
+    analytics.on('identify', function(e, p, o) { recordAnalyticsCall('identify', e, p, o)});
+    analytics.on('group', function(e, p, o) { recordAnalyticsCall('group', e, p, o)});
+    analytics.on('track', function(e, p, o) { recordAnalyticsCall('track', e, p, o)});
+    analytics.on('page', function(e, p, o) { recordAnalyticsCall('page', e, p, o)});
+
+    var request_id = "B0FBD320-DE54-AC120A2A-01BB-5DD809CF-D9A8F1-0FA6";
+
+    function trackIdentity() {
+        window.analytics.identify("10756763", {"id":"10756763","name":"Daniel Bayford","email":"dan.bayford@gmail.com","username":"danielbayford","avatar":"https://secure.gravatar.com/avatar/8d688ec076940cae0948998a8afad22d?s=400\u0026d=https%3A%2F%2Fstatic.teamtreehouse.com%2Fassets%2Fcontent%2Fdefault_avatar-ea7cf6abde4eec089a4e03cc925d0e893e428b2b6971b12405a9b118c837eaa2.png\u0026r=pg","created_at":"2019-07-31T11:29:21Z","organization_id":"","subscription_id":"10278698","plan_id":"1412","plan_name":"Techdegree","degree_id":"92","degree_addon_id":"322","track_id":"12","user_timezone":"Europe/London","b2b_org_admin":"false","b2b_dept_admin":"false","billing_period":"monthly","profile_company_name":"","profile_job_title":"","visitor_id":"7216483831","session_id":"c35abc50-e415-4cbe-8ac2-5661f3a934fe"}, {
+          Intercom : {
+            user_hash : "ec0f12092fc9d19c867a6b4f77a526b75f798f91ee81a621897fb2e04ea3fe17"
+          }
+        });
+
+    }
+
+    function trackPage() {
+      window.analytics.page({
+        visitor_id: "7216483831",
+        session_id: "c35abc50-e415-4cbe-8ac2-5661f3a934fe",
+        request_id: request_id
+      });
+    }
+
+    
+
+    trackIdentity();
+    trackPage();
+
+    $(document).on("pjax:success", function(event, body, status, xhr, options) {
+      request_id = xhr.getResponseHeader("X-Request-Id");
+      trackPage();
+    });
+  }}();
+  //# sourceURL=_analytics_footer.erb
+</script>
+
+  
+
+
+<script type="application/ld+json">
+{ 
+  "@context": "http://schema.org", 
+  "@type": "WebSite", 
+  "url": "http://www.teamtreehouse.com/", 
+  "name" : "Treehouse",
+  "potentialAction": { 
+    "@type": "SearchAction", 
+    "target": "http://teamtreehouse.com/library/q:{search_term}", 
+    "query-input": "required name=search_term" } 
+}
+</script><a href="https://plus.google.com/110278003536476194286" rel="publisher"></a><script type="application/ld+json">
+{ "@context" : "http://schema.org",
+"@type" : "Organization",
+"name" : "Treehouse (Treehouse Island, Inc.)",
+"url" : "http://teamtreehouse.com",
+"logo": "https://upload.wikimedia.org/wikipedia/en/a/a3/Treehouse%27s_logo_%28Jan_2015%29.png",
+"sameAs" : [
+"https://twitter.com/treehouse",
+"https://www.facebook.com/TeamTreehouse",
+"https://www.linkedin.com/company/treehouse-island-inc-",
+"https://plus.google.com/+gotreehouse/posts",
+"http://en.wikipedia.org/wiki/Treehouse_(company)",
+"https://www.freebase.com/m/0t_cxxw"
+]
+}
+</script><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","688952224481965",{em:"dan.bayford@gmail.com"});fbq("set","agent","tmgoogletagmanager","688952224481965");fbq("track","PageView");</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=688952224481965&amp;ev=PageView&amp;noscript=1">
+</noscript><script type="text/javascript" id="">/*
+ @preserve
+ jquery.scrolldepth.js | v0.4.1
+ Copyright (c) 2014 Rob Flaherty (@robflaherty)
+ Licensed under the MIT and GPL licenses.
+*/
+(function(c,h,m,u){var n={elements:[],minHeight:0,percentage:!0,testing:!1},k=c(h),f=[];c.scrollDepth=function(d){function l(a,b,e){d.testing?c("#console").html(a+": "+b):"undefined"!==typeof dataLayer?(dataLayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:a,eventLabel:b,eventValue:1,eventNonInteraction:!0}),2<arguments.length&&dataLayer.push({event:"ScrollTiming",eventCategory:"Scroll Depth",eventAction:a,eventLabel:b,eventTiming:e})):("undefined"!==typeof ga&&(ga("send",
+"event","Scroll Depth",a,b,1,{nonInteraction:1}),2<arguments.length&&ga("send","timing","Scroll Depth",a,e,b)),"undefined"!==typeof _gaq&&(_gaq.push(["_trackEvent","Scroll Depth",a,b,1,!0]),2<arguments.length&&_gaq.push(["_trackTiming","Scroll Depth",a,e,b,100])))}function p(a,b,e){c.each(a,function(a,g){-1===c.inArray(a,f)&&b>=g&&(l("Percentage",a,e),f.push(a))})}function q(a,b,e){c.each(a,function(a,g){-1===c.inArray(g,f)&&c(g).length&&b>=c(g).offset().top&&(l("Elements",g,e),f.push(g))})}function r(a,
+b){var e,c,g,d=null,f=0,k=function(){f=new Date;d=null;g=a.apply(e,c)};return function(){var h=new Date;f||(f=h);var l=b-(h-f);e=this;c=arguments;0>=l?(clearTimeout(d),d=null,f=h,g=a.apply(e,c)):d||(d=setTimeout(k,l));return g}}var t=+new Date;d=c.extend({},n,d);c(m).height()<d.minHeight||(l("Percentage","Baseline"),k.on("scroll.scrollDepth",r(function(){var a=c(m).height(),b=h.innerHeight?h.innerHeight:k.height();b=k.scrollTop()+b;a={"25%":parseInt(.25*a,10),"50%":parseInt(.5*a,10),"75%":parseInt(.75*
+a,10),"100%":a-1};var e=+new Date-t;f.length>=4+d.elements.length?k.off("scroll.scrollDepth"):(d.elements&&q(d.elements,b,e),d.percentage&&p(a,b,e))},500)))}})(jQuery,window,document);jQuery.scrollDepth();</script><script type="text/javascript" id="">fbq("trackCustom","LoggedInAsTechdegree");</script>
+<noscript>
+  <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=688952224481965&amp;ev=LoggedInAsTechdegree&amp;noscript=1">
+</noscript><script type="text/javascript" id="">fbq("trackCustom","LoggedInVisitor");</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=688952224481965&amp;ev=LoggedInVisitor"></noscript><img src="./Treehouse _ Techdegree_files/mark" width="0" height="0"><script type="text/javascript" id="">(function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.src="//d3cxv97fi8q177.cloudfront.net/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js";a.type="text/javascript";a.async=!0;a.id="irfOuterTag";b.parentNode.insertBefore(a,b)})();</script>
+<script type="text/javascript" id="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","e11074c9-3477-47ea-83f3-9bb61f960cef",{user_email:"__INSERT_USER_EMAIL__"});snaptr("track","PAGE_VIEW");</script>
+<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.2771596735557973"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.09032892205316201" width="0" height="0" alt="" src="./Treehouse _ Techdegree_files/0"></div><form method="GET" action="https://tr.snapchat.com/cm/i" target="snap018207449703676426" accept-charset="utf-8" style="display: none;"><iframe id="snap018207449703676426" name="snap018207449703676426" src="./Treehouse _ Techdegree_files/saved_resource.html"></iframe></form><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Treehouse _ Techdegree_files/box-b736908ce6b0e933fad3a2e45df61b38.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><div id="optanon" class="modern"><div id="optanon-popup-bg"></div><div id="optanon-popup-wrapper" role="dialog" aria-modal="true" tabindex="-1" lang="en-GB"><div id="optanon-popup-top"><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Close Button&#39;);" class="optanon-close-link optanon-close optanon-close-ui" title="Close Preference Centre"><div id="optanon-close" style="background: url(https://optanon.blob.core.windows.net/skins/default_flat_bottom_two_button_white/v2/images/optanon-pop-up-close.png);width:34px;height:34px;"></div></a></div><div id="optanon-popup-body"><div id="optanon-popup-body-left"><div id="optanon-popup-body-left-shading"></div><div id="optanon-branding-top-logo" style="background-image: url(https://optanon.blob.core.windows.net/logos/5950/5950:teamtreehouse.com/treehouse-icon.png) !important;"></div><ul id="optanon-menu"><li class="menu-item-on menu-item-about" title="Your Privacy"><p><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">Your Privacy</a></p></li><li class="menu-item-necessary menu-item-on" title="Essential Cookies"><p><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">Essential Cookies</a></p></li><li class="menu-item-on menu-item-performance" title="Performance and Functionality Cookies"><p><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">Performance and Functionality Cookies</a></p></li><li class="menu-item-on menu-item-functional" title="Analytics and Customization Cookies"><p><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">Analytics and Customization Cookies</a></p></li><li class="menu-item-on menu-item-advertising" title="Targeting Cookies"><p><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">Targeting Cookies</a></p></li><li class="menu-item-moreinfo menu-item-off" title="Cookie Policy"><p><a target="_blank" href="https://teamtreehouse.com/cookies" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Cookie Policy&#39;);">Cookie Policy</a></p></li></ul></div><div id="optanon-popup-body-right"><h2 aria-label="true">Privacy Preference Center</h2><h3></h3><div id="optanon-popup-more-info-bar"><div class="optanon-status"><div class="optanon-status-editable"><form><fieldset><p><input type="checkbox" value="check" id="chkMain" checked="" class="optanon-status-checkbox"><label for="chkMain">Active</label></p></fieldset></form></div><div class="optanon-status-always-active optanon-status-on"><p>Always Active</p></div></div></div><div id="optanon-main-info-text"></div></div><div class="optanon-bottom-spacer"></div></div><div id="optanon-popup-bottom"> <a href="https://onetrust.com/poweredbyonetrust" target="_blank"><div id="optanon-popup-bottom-logo" style="background: url(https://optanon.blob.core.windows.net/skins/default_flat_bottom_two_button_white/v2/images/cookie-collective-top-bottom.png);width:155px;height:35px;" title="powered by OneTrust"></div></a><div class="optanon-button-wrapper optanon-save-settings-button optanon-close optanon-close-consent"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Save Settings&#39;);">Save Settings</a></div><div class="optanon-white-button-right"></div></div><div class="optanon-button-wrapper optanon-allow-all-button optanon-allow-all" style="display: none;"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><a href="https://teamtreehouse.com/projects/list-pagination-and-filtering#" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Allow All&#39;);">Allow All</a></div><div class="optanon-white-button-right"></div></div></div></div></div><div class="optanon-alert-box-wrapper  " style="display:none"><div class="optanon-alert-box-bottom-top"><div class="optanon-alert-box-corner-close"><a class="optanon-alert-box-close" href="https://teamtreehouse.com/projects/list-pagination-and-filtering#" title="Close Banner" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Banner Close Button&#39;);"></a></div></div><div class="optanon-alert-box-bg"><div class="optanon-alert-box-logo"> </div><div class="optanon-alert-box-body"><p>We use cookies to remember you when you log in, administer our website, analyze our traffic and provide social media features to you. We also share information about your use of our site with our social media, advertising and analytics partners. Click on Cookie Settings to modify your Cookie preferences.</p></div><div class="optanon-clearfix"></div><div class="optanon-alert-box-button-container"><div class="optanon-alert-box-button optanon-button-close"><div class="optanon-alert-box-button-middle"><a class="optanon-alert-box-close" href="https://teamtreehouse.com/projects/list-pagination-and-filtering#">Close</a></div></div><div class="optanon-alert-box-button optanon-button-allow"><div class="optanon-alert-box-button-middle"><a class="optanon-allow-all" href="https://teamtreehouse.com/projects/list-pagination-and-filtering#" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Banner Accept Cookies&#39;);">Accept Cookies</a></div></div><div class="optanon-alert-box-button optanon-button-more"><div class="optanon-alert-box-button-middle"><a class="optanon-toggle-display" href="https://teamtreehouse.com/projects/list-pagination-and-filtering#" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Banner Open Preferences&#39;);">Cookie Settings</a></div></div></div><div class="optanon-clearfix optanon-alert-box-bottom-padding"></div></div></div><script type="text/javascript" id="">(function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.src="//d3cxv97fi8q177.cloudfront.net/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js";a.type="text/javascript";a.async=!0;a.id="irfOuterTag";b.parentNode.insertBefore(a,b)})();</script>
+<script type="text/javascript" id="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","e11074c9-3477-47ea-83f3-9bb61f960cef",{user_email:"__INSERT_USER_EMAIL__"});snaptr("track","PAGE_VIEW");</script>
+<img src="./Treehouse _ Techdegree_files/saved_resource" border="0" height="0" width="0" style="position: absolute; height: 1px; width: 1px;"><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important;" aria-hidden="true" tabindex="-1" title="Intercom" src="./Treehouse _ Techdegree_files/saved_resource(1).html"></iframe><div id="intercom-css-container"><style data-emotion="intercom-global"></style></div><div id="intercom-container" class="intercom-namespace"><style>html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body,html.intercom-modal-open,#intercom-container-body{overflow:hidden !important;}html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body{position:static !important;}html.intercom-mobile-messenger-active > body{height:0 !important;margin:0 !important;}iframe#intercom-frame{position:absolute !important;opacity:0 !important;width:1px !important;height:1px !important;top:0 !important;left:0 !important;border:none !important;display:block !important;z-index:-1 !important;}</style><div class="intercom-app" aria-live="polite"><div id="intercom-modal-container"></div></div></div></body></html>

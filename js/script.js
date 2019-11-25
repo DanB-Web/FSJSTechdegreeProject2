@@ -5,6 +5,7 @@ FSJS project 2 - List Filter and Pagination
 
 const list = document.getElementsByClassName("student-item");
 const mainPage = document.querySelector(".page"); 
+const links = document.getElementsByTagName("a");
 
 /*Function to iterate through array and display only those that meet arguments*/
 
@@ -25,9 +26,9 @@ function showPage (list, page) {
 
     }
 
-    appendPageLinks(list);
-
 }
+
+/*Function to create and append populated div when called*/
 
 function appendPageLinks (list) {
 
@@ -54,17 +55,20 @@ function appendPageLinks (list) {
 
 }
 
-/*Initially show first 10 student*/
+/*Initialise the page with the first 10 students and set first link to "active"*/
 
 showPage(list, 1);
+appendPageLinks(list);
+links[0].className = "active";
 
-/*Add event listener to pass relevent parameters to showPage function*/
+
+/*Add event listener to pass relevent parameters to showPage and appendPageLinks functions*/
 
 const pages = document.querySelector(".pagination")
 
 pages.addEventListener ("click", (event) => {
 
-  const links = document.getElementsByTagName("a");
+  //const links = document.getElementsByTagName("a");
 
   for (let i = 0; i < links.length; i++ )
 
@@ -77,6 +81,3 @@ pages.addEventListener ("click", (event) => {
   showPage (list, event.target.textContent)
 
 });
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments

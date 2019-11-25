@@ -18,23 +18,6 @@ FSJS project 2 - List Filter and Pagination
 ***/
 
 const list = document.getElementsByClassName("student-item");
-const itemsPerPage = 10; 
-
-
-/*** 
-   Create the `showPage` function to hide all of the items in the 
-   list except for the ten you want to show.
-
-   Pro Tips: 
-     - Keep in mind that with a list of 54 students, the last page 
-       will only display four.
-     - Remember that the first student has an index of 0.
-     - Remember that a function `parameter` goes in the parens when 
-       you initially define the function, and it acts as a variable 
-       or a placeholder to represent the actual function `argument` 
-       that will be passed into the parens later when you call or 
-       "invoke" the function 
-***/
 
 /*Function to iterate through array and display only those that meet arguments*/
 
@@ -57,12 +40,38 @@ function showPage (list, page) {
 
 }
 
+/*Initially show first 10 student*/
+
 showPage(list, 1);
 
 /*** 
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
+
+function appendPageLinks (list) {
+
+  const items = list.length;
+  const pages = Math.ceil(items * 0.1);
+
+  const mainPage = document.querySelector(".page");
+  const div = document.createElement("div");
+  div.className = "pagination";
+
+  const ul = document.createElement("ul");
+
+  for (let i = 1; i <= pages; i++) {
+
+    const li = document.createElement("li");
+    li.innerHTML = "<a href>" + i + "</a>"
+    ul.appendChild(li);
+
+  }
+
+  div.appendChild(ul);
+  mainPage.appendChild(div);
+
+}
 
 
 

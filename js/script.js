@@ -76,6 +76,8 @@ function appendPageLinks (list) {
 
   else {mainPage.appendChild(div)}
 
+  setPageEvent(); //Reinstall event listener
+
 }
 
 /*Function to search records - checks through records and sets its style.display
@@ -95,7 +97,7 @@ function searchName (searchInput, list) {
           if (searchInput.length != 0 && list[i].textContent.toLowerCase().includes(searchInput))
               
           
-          { list[i].style.display = " ";
+          { list[i].style.display = "list-item";
             list[i].classList.add("matched");
             send.push(list[i]);}
 
@@ -142,6 +144,8 @@ title.appendChild(searchDiv);
 /*Add event listener to pass relevent parameters to showPage and appendPageLinks functions when page numbers clicked
 - it also sets the clicked page number className to 'active' for styling*/
 
+function setPageEvent() {
+
 const pages = document.querySelector(".pagination");
 
 pages.addEventListener ("click", (event) => {
@@ -155,7 +159,7 @@ pages.addEventListener ("click", (event) => {
   event.target.className = "active";
   showPage (list, event.target.textContent)
 
-});
+});}
 
 
 /*Event listener for the search button - either sends the search box contnent to the searchName
@@ -172,21 +176,20 @@ searchButton.addEventListener('click', (event) => {
 
   else {
  
-    // showPage(list, 1);
-    // appendPageLinks(list);
-    // header2.textContent = "Students";
-    // links[0].className = "active";
-    // searchButton.textContent = "Search";
+    showPage(list, 1);
+    appendPageLinks(list);
+    header2.textContent = "Students";
+    links[0].className = "active";
+    searchButton.textContent = "Search";
+    searchBox.value = "";
 
-    // for (i = 0; i < list.length; i++)
-    // {list[i].classList.remove("matched");}
-    // console.log(searchResults);
-
-    location.reload();
+    for (i = 0; i < list.length; i++)
+    {list[i].classList.remove("matched");}
 
   }
 
 });
+
 
 
 
